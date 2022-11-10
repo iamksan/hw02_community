@@ -20,3 +20,4 @@ def group_posts(request, slug):
         'posts': posts
     }
     return render(request, template, context)
+    

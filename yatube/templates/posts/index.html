@@ -1,12 +1,10 @@
 {% extends 'base.html' %}
-<h1>
 {% block title %}
   Последние обновления на сайте
 {% endblock %}
 {% block content %}
 <h1>
-</h1>
-{% for post in posts %}
+  {% for post in posts %}
   <ul>
     <li>
       Автор: {{ post.author.get_full_name }}

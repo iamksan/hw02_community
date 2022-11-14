@@ -24,7 +24,6 @@ class Post(models.Model):
     group = models.ForeignKey(
         Group,
         on_delete=models.CASCADE,
-        max_length=200,
         blank=True,
         null=True,
         related_name='posts'
